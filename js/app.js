@@ -1,5 +1,6 @@
 $(function() {
 
+  const modalSlider = $('[data-slider="modalSlider"]');
 
 
   /* Main Slider */
@@ -77,7 +78,7 @@ $(function() {
           });
       }, 200);
 
-      const modalSlider = $('[data-slider="modalSlider"]');
+
 
       modalSlider.slick('setPosition');
   });
@@ -117,7 +118,7 @@ $(function() {
 
   /* Modal Slider */
 
-  $('#modalSlider').slick({
+  modalSlider.slick({
     infinite: true,
     speed: 1000,
     slidesToShow: 1,

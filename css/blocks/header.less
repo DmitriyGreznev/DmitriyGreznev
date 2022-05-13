@@ -1,0 +1,49 @@
+// main: ../style.less
+
+.header {
+    background-color: @dark;
+    border-bottom: 1px solid fade(@gray, 25%);
+}
+
+.header__inner {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+
+}
+
+.logo {
+    padding: 5px;
+    color: @white;
+    background-color: @blue;
+    border-radius: 5px;
+}
+
+.header__icon-bar{
+    position: absolute;
+    top: 80px;
+    width: 120px;
+    right: -10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: fade(@white, 10%);
+    border-radius: 20px;
+    padding: 5px 15px;
+}
+
+.header__icon {
+    float: left;
+    width: 25px;
+    height: auto;
+    transition: 0.2s;
+
+    &:hover {
+        transform: translateY(-2px);
+    }
+}
+
+.header__icon__link {
+    text-decoration: none;
+}

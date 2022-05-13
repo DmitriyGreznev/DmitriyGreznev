@@ -1,0 +1,74 @@
+// main: ../style.less
+
+.intro__title-section {
+    margin-top: 180px;
+
+    @media @tablet {
+        margin-top: 130px;
+    }
+
+    @media @mobile {
+        margin-top: 90px;
+    }
+
+
+}
+
+.intro__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.intro__title {
+    font-size: 50px;
+    font-weight: 400;
+    color: @white;
+
+    @media @notebook {
+        font-size: 40px;
+    }
+
+    @media @tablet {
+        font-size: 30px;
+    }
+
+}
+
+.intro__subtitle {
+    font-size: 23px;
+    font-weight: 300;
+    margin-bottom: 20px;
+
+    @media @notebook {
+        font-size: 18px;
+    }
+
+    @media @tablet {
+        font-size: 14px;
+    }
+
+}
+
+.background {
+    margin-top: 40px;
+    width: 500px;
+    height: auto;
+
+    @media @notebook {
+        margin-right: 20px;
+        width: 480px;
+    }
+
+    @media @tablet {
+        margin-right: 40px;
+        width: 360px;
+    }
+
+    @media @mobile {
+        width: 240px;
+    }
+
+    @media @mobile-sm {
+        display: none;
+    }
+}

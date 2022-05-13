@@ -1,0 +1,52 @@
+// main: ../style.less
+
+.stack {
+    text-align: left;
+    margin-left: 10px;
+    padding: 20px;
+    width: 50%;
+    background-color: @dark-violet;
+    border-radius: 20px;
+
+    @media @tablet {
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+.stack__title {
+    font-size: 20px;
+    color: @white;
+    margin-bottom: 20px;
+}
+
+.stack__info__row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+
+.stack__info__item {
+    text-align: center;
+
+    img {
+        width: 110px;
+        height: auto;
+        margin-bottom: 10px;
+
+        @media @mobile {
+            width: 80px;
+        }
+
+        @media @mobile-sm {
+            width: 70px;
+        }
+    }
+}
+
+.stack__info__text {
+    display: block;
+    color: @white;
+    margin-bottom: 0px;
+}

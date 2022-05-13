@@ -1,0 +1,44 @@
+// compress: true
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: @gray;
+    font-size: 15px;
+    font-weight: 500;
+    background-color: @black;
+
+    &.no-scroll {
+        overflow: hidden;
+    }
+}
+
+/* Import */
+@import "vars/vars.less";
+@import "blocks/wrapper.less";
+@import "blocks/container.less";
+@import "blocks/block__title.less";
+@import "blocks/header.less";
+@import "blocks/nav.less";
+@import "blocks/burger.less";
+@import "blocks/intro.less";
+@import "blocks/slider.less";
+@import "blocks/btn.less";
+@import "blocks/portfolio.less";
+@import "blocks/work.less";
+@import "blocks/services.less";
+@import "blocks/about.less";
+@import "blocks/stack.less";
+@import "blocks/footer.less";
+@import "blocks/modal.less";
+@import "blocks/modal__work.less";
+@import "adaptive.less";

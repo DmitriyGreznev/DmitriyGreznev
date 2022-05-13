@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/slick.css">
+
+    <title>Дмитрий Грезнев | FrontEnd Разработка</title>
+</head>
+<body>
+    <div class="wrapper">
+
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <div class="logo">DG</div>
+                    <input type="checkbox" id="check-menu">
+                    <label for="check-menu"></label>
+                    <div class="burger-line first"></div>
+                    <div class="burger-line second"></div>
+                    <div class="burger-line third"></div>
+                    <div class="burger-line fourth"></div>
+                    <nav class="nav">
+                        <a href="#" class="nav__link">Главная</a>
+                        <a href="#portfolio" class="nav__link">Работы</a>
+                        <a href="#services" class="nav__link">Услуги</a>
+                        <a href="#about" class="nav__link">Обо мне</a>
+                    </nav>
+
+                    <div class="header__icon-bar">
+                        <a href="#" class="header__icon__link">
+                            <img src="./img/telegram-header-icon.png" alt="Telegram" class="header__icon">
+                        </a>
+                        <a href="#" class="header__icon__link">
+                            <img src="./img/github-header-icon.png" alt="GitHub" class="header__icon">
+                        </a>
+                        <a href="#" class="header__icon__link">
+                            <img src="./img/instagram-header-icon.png" alt="Instagram" class="header__icon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header> <!-- Header End -->
+
+        <!-- Intro -->
+        <div class="intro">
+            <div class="container">
+                <div class="intro__inner">
+                    <div class="intro__title-section">
+                        <h1 class="intro__title">Дмитрий Грезнев <br>Frontend Developer</h1>
+                        <h3 class="intro__subtitle">Разработка веб-сайтов и веб-приложений</h3>
+                        <button class="btn btn--intro" >Портфолио</button>
+                        <button class="btn btn--intro-github">GitHub</button>
+                    </div>
+
+                    <div class="intro__background-section">
+                        <img class="background" src="./img/background.png" alt="Background">
+                    </div>
+                </div>
+            </div>
+        </div> <!-- Intro End -->
+
+        <!-- Portfolio -->
+        <div class="portfolio" id="portfolio">
+            <div class="container">
+                <div class="portfolio__inner">
+                    <div class="portfolio__inner__top"><div class="block__title block__title--portfolio"><div class="block__title__item"></div>Работы</div>
+                    <div class="slider__selector">
+                        <button type="button" class="slider__btn" id="slickPrevious">
+                            <img src="./img/left-arrow.png" alt="" class="slider__btn__img">
+                        </button>
+                        <button type="button" class="slider__btn" id="slickNext">
+                            <img src="./img/right-arrow.png" alt="" class="slider__btn__img">
+                        </button>
+                    </div></div>
+
+                    <!-- Slider -->
+                    <div class="portfolio__row" data-slider="workSlider" id="workSlider">
+
+                        <!-- Work -->
+                        <div class="work" data-modal="#singup-singin-form">
+                            <img src="./img/portfolio/Форма авторизации/Форма-авторизации-1.jpg" alt="" class="work__img">
+                            <div class="work__info">
+                                <div class="work__stack">
+                                    <div class="work__stack__item">HTML</div>
+                                    <div class="work__stack__item">CSS</div>
+                                    <div class="work__stack__item">JS</div>
+                                </div>
+                                <div class="work__category">#item</div>
+                                <div class="work__title">Форма авторизации</div>
+                                <div class="work__more">...</div>
+                            </div>
+                        </div> <!-- Work End -->
+
+                        <!-- Work -->
+                        <div class="work" data-modal="#portfolio-website">
+                            <img src="./img/portfolio/Сайт портфолио/Сайт-портфолио.jpg" alt="" class="work__img">
+                            <div class="work__info">
+                                <div class="work__stack">
+                                    <div class="work__stack__item">HTML</div>
+                                    <div class="work__stack__item">CSS</div>
+                                    <div class="work__stack__item">Less</div>
+                                    <div class="work__stack__item">jQuery</div>
+                                </div>
+                                <div class="work__category">#website</div>
+                                <div class="work__title">Сайт портфолио</div>
+                                <div class="work__more">...</div>
+                            </div>
+                        </div> <!-- Work End -->
+
+                        <!-- Work -->
+                        <div class="work" data-modal="#password-generator">
+                            <img src="./img/portfolio/Генератор паролей/Генератор-паролей-1.jpg" alt="" class="work__img">
+                            <div class="work__info">
+                                <div class="work__stack">
+                                    <div class="work__stack__item">HTML</div>
+                                    <div class="work__stack__item">CSS</div>
+                                    <div class="work__stack__item">JS</div>
+                                    <div class="work__stack__item">React</div>
+                                </div>
+                                <div class="work__category">#app</div>
+                                <div class="work__title">Генератор паролей</div>
+                                <div class="work__more">...</div>
+                            </div>
+                        </div> <!-- Work End -->
+
+                         <!-- Work -->
+                         <div class="work" data-modal="#menu-burger">
+                            <img src="./img/portfolio/Меню-бургер/Меню-бургер-1.jpg" alt="" class="work__img">
+                            <div class="work__info">
+                                <div class="work__stack">
+                                    <div class="work__stack__item">HTML</div>
+                                    <div class="work__stack__item">CSS</div>
+                                </div>
+                                <div class="work__category">#item</div>
+                                <div class="work__title">Меню бургер</div>
+                                <div class="work__more">...</div>
+                            </div>
+                        </div> <!-- Work End -->
+
+                    </div> <!-- Slider -->
+                </div>
+            </div>
+        </div> <!-- Portfolio End -->
+
+        <!-- Services -->
+        <div class="services" id="services">
+            <div class="container">
+                <div class="services__inner">
+                    <div class="block__title"><div class="block__title__item"></div>Услуги</div>
+                    <div class="services__row">
+
+                        <!-- Services__Item -->
+                        <div class="services__item">
+                            <img src="./img/software-development.png" alt="Разработка веб-сайтов" class="services__item__icon">
+                            <div class="services__item__title">
+                                Разработка веб-сайтов
+                            </div>
+
+                            <div class="services__item__info">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium alias id consequatur accusamus delectus deserunt nulla ullam expedita eum, cum quia, quae, minus sequi officiis ad sint in corrupti dignissimos?
+                            </div>
+                        </div> <!-- Services__Item End -->
+
+                        <!-- Services__Item -->
+                        <div class="services__item">
+                            <img src="./img/app-development.png" alt="Разработка веб-приложений" class="services__item__icon">
+                            <div class="services__item__title">
+                                Разработка веб-приложений
+                            </div>
+
+                            <div class="services__item__info">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium alias id consequatur accusamus delectus deserunt nulla ullam expedita eum, cum quia, quae, minus sequi officiis ad sint in corrupti dignissimos?
+                            </div>
+                        </div> <!-- Services__Item End -->
+
+                        <!-- Services__Item -->
+                        <div class="services__item">
+                            <img src="./img/adaptive.png" alt="Адаптивная вёрстка" class="services__item__icon">
+                            <div class="services__item__title">
+                                Адаптивная вёрстка
+                            </div>
+                            <div class="services__item__info">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium alias id consequatur accusamus delectus deserunt nulla ullam expedita eum, cum quia, quae, minus sequi officiis ad sint in corrupti dignissimos?
+                            </div>
+                        </div> <!-- Services__Item End -->
+                    </div>
+                </div>
+            </div>
+        </div> <!-- Services End -->
+
+        <!-- About -->
+        <div class="about" id="about">
+            <div class="container">
+                <div class="about__inner">
+                    <div class="block__title"><div class="block__title__item"></div>Обо мне</div>
+                    <div class="about__row">
+
+                        <!-- About Me -->
+                        <div class="about-me">
+                            <img src="./img/hacker.png" alt="Дмитрий Грезнев" class="about__me__img">
+                            <div class="about-me__title">Коротко обо мне</div>
+                            <div class="about-me__info">
+                                <p>Я фронтенд разработчик с навыками дизайнера. Имею разнообразный опыт в IT, который помогает мне в решении сложных задач.</p>
+                                <p>Разрабатываю сайты и веб-приложения на HTML, CSS и JavaScript. Обладаю высокими навыками использования дизайнерских программ, таких как Figma, Adobe XD, Adobe Photoshop.</p>
+                                <p>Несмотря на большой опыт и высокий уровень soft skills, я не стою на месте, а ежедневно занимаюсь изучением новых технологий.</p>
+                                <p>Будучи трудолюбивым и целеустремленным, я всегда работаю над достижением найлучшего результата в каждом проекте, за который берусь.</p>
+                            </div>
+                        </div> <!-- About Me End -->
+
+
+                        <!-- Stack -->
+                        <div class="stack">
+                            <div class="stack__title">Tech stack</div>
+                            <div class="stack__info">
+                                <div class="stack__info__row">
+                                    <div class="stack__info__item">
+                                        <img src="./img/html.png" alt="HTML">
+                                        <span class="stack__info__text">HTML</span>
+                                    </div>
+
+                                    <div class="stack__info__item">
+                                        <img src="./img/css-3.png" alt="CSS">
+                                        <span class="stack__info__text">CSS</span>
+                                    </div>
+
+                                    <div class="stack__info__item">
+                                        <img src="./img/js.png" alt="JavaScript">
+                                        <span class="stack__info__text">JavaScript</span>
+                                    </div>
+
+                                    <div class="stack__info__item">
+                                        <img src="./img/react.png" alt="React">
+                                        <span class="stack__info__text">React</span>
+                                    </div>
+                                </div>
+
+                                <div class="stack__info__row">
+                                    <div class="stack__info__item">
+                                        <img src="./img/visual-studio.png" alt="VS Code">
+                                        <span class="stack__info__text">VS Code</span>
+                                    </div>
+
+                                    <div class="stack__info__item">
+                                        <img src="./img/photoshop.png" alt="Photoshop">
+                                        <span class="stack__info__text">Photoshop</span>
+                                    </div>
+
+                                    <div class="stack__info__item">
+                                        <img src="./img/xd.png" alt="Adobe XD">
+                                        <span class="stack__info__text">Adobe XD</span>
+                                    </div>
+
+                                    <div class="stack__info__item">
+                                        <img src="./img/figma.png" alt="Figma">
+                                        <span class="stack__info__text">Figma</span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div> <!-- Stack End -->
+                    </div>
+                </div>
+            </div>
+        </div> <!-- About End -->
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__copy">&copy; 2022 - Dmitriy Greznev</div>
+                    <nav class="footer__nav">
+                        <a href="#" class="footer__nav__link">Главная</a>
+                        <a href="#portfolio" class="footer__nav__link">Работы</a>
+                        <a href="#services" class="footer__nav__link">Услуги</a>
+                        <a href="#about" class="footer__nav__link">Обо мне</a>
+                    </nav>
+                    <div class="footer__icon-bar">
+                        <a href="#" class="footer__icon__link"><img src="./img/telegram-icon.png" alt="Telegram" class="footer__icon"></a>
+                        <a href="#" class="footer__icon__link"><img src="./img/github-icon.png" alt="GitHub" class="footer__icon"></a>
+                        <a href="#" class="footer__icon__link"><img src="./img/instagram-icon.png" alt="Instagram" class="footer__icon"></a>
+                    </div>
+                </div>
+            </div>
+        </footer> <!-- Footer End -->
+
+    </div>
+
+    <!-- Modal -->
+
+    <!-- Singin Form-->
+    <div class="modal" id="singup-singin-form">
+        <div class="container">
+            <div class="modal__inner">
+                <div class="modal__work">
+                    <button class="modal__close" type="button" data-close><img src="./img/modal__close.svg" alt="Закрыть"></button>
+                    <div class="modal__work__prev">
+                        <div class="modal__slider" data-slider="modalSlider" id="modalSlider">
+                            <div>
+                                <img src="./img/portfolio/Форма авторизации/Форма-авторизации-1.jpg" class="modal_slider__img" alt="">
+                            </div>
+                            <div>
+                                <img src="./img/portfolio/Форма авторизации/Форма-авторизации-2.jpg" class="modal_slider__img" alt="">
+                            </div>
+
+                        </div>
+                        <div class="modal__slider-block">
+                            <button type="button" class="slider__btn" id="modalSlickPrevious">
+                                <img src="./img/left-arrow.png" alt="" class="slider__btn__img">
+                            </button>
+                            <button type="button" class="slider__btn" id="modalSlickNext">
+                                <img src="./img/right-arrow.png" alt="" class="slider__btn__img">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="modal__work__content">
+                        <div class="modal__work__info">
+                            <div class="modal__work__title">Форма авторизации</div>
+
+                            <div class="work__stack">
+                                <div class="work__stack__item">HTML</div>
+                                <div class="work__stack__item">CSS</div>
+                                <div class="work__stack__item">JS</div>
+                            </div>
+
+                            <div class="work__category">#item</div>
+
+                            <div class="modal__work__info__text">
+                                <p>Анимированная форма авторизации и регистрации. Выполнена на чистом HTML и CSS.</p>
+
+                                <p>Форма авторизации при клике на соответствующую кнопку плавно перетекает в форму регистрации и наоборот. Является полностью адаптивной.</p>
+
+                                <p>Анимация переключается с помощью простого скрипта на JavaScript.</p>
+                            </div>
+
+                            <div class="modal__work__footer">
+                                <a href="" class="modal__work__link">Перейти</a>
+                                <a href="" class="modal__work__link">Открыть на GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Website -->
+    <div class="modal" id="portfolio-website">
+        <div class="container">
+            <div class="modal__inner">
+                <div class="modal__work">
+                    <button class="modal__close" type="button" data-close><img src="./img/modal__close.svg" alt="Закрыть"></button>
+                    <div class="modal__work__prev">
+                        <div class="modal__slider" data-slider="modalSlider" id="modalSlider">
+                            <div>
+                                <img src="./img/portfolio/Сайт портфолио/Сайт-портфолио.jpg" class="modal_slider__img" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal__work__content">
+                        <div class="modal__work__info">
+                            <div class="modal__work__title">Сайт портфолио</div>
+
+                            <div class="work__stack">
+                                <div class="work__stack__item">HTML</div>
+                                <div class="work__stack__item">CSS</div>
+                                <div class="work__stack__item">Less</div>
+                                <div class="work__stack__item">jQuery</div>
+                            </div>
+
+                            <div class="work__category">#website</div>
+
+                            <div class="modal__work__info__text">
+                                <p>Мой личный сайт. Разработан на связке HTML и препроцессора Less. Дизайн разрабатывался по ходу вёрстки.</p>
+
+                                <p>В разработке был применён компонентный подход. В вёрстке старался придерживаться методологии БЭМ.</p>
+
+                                <p>Раздел с работами выполнен в виде бесконечного слайдера на jQuery. При клике на работу, открывается модальное окно со слайдером скриншотов работы и её описанием.</p>
+
+                                <p>Сайт адаптирован под ноутбуки и мобильные устройства.</p>
+                            </div>
+
+                            <div class="modal__work__footer">
+                                <a href="" class="modal__work__link">Перейти</a>
+                                <a href="" class="modal__work__link">Открыть на GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Password Generator -->
+    <div class="modal" id="password-generator">
+        <div class="container">
+            <div class="modal__inner">
+                <div class="modal__work">
+                    <button class="modal__close" type="button" data-close><img src="./img/modal__close.svg" alt="Закрыть"></button>
+                    <div class="modal__work__prev">
+                        <div class="modal__slider" data-slider="modalSlider" id="modalSlider">
+                            <div>
+                                <img src="./img/portfolio/Генератор паролей/Генератор-паролей-2.jpg" class="modal_slider__img" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal__work__content">
+                        <div class="modal__work__info">
+                            <div class="modal__work__title">Генератор паролей</div>
+
+                            <div class="work__stack">
+                                <div class="work__stack__item">HTML</div>
+                                <div class="work__stack__item">CSS</div>
+                                <div class="work__stack__item">JS</div>
+                                <div class="work__stack__item">React</div>
+                            </div>
+
+                            <div class="work__category">#app</div>
+
+                            <div class="modal__work__info__text">
+                                <p>Простой генератор паролей. Собран на React. Генерирует случайный пароль и копирует его в буфер при клике на соответствующую кнопку.</p>
+
+                                <p>Можно контролировать использование спецсимволов в пароле и его длинну.</p>
+
+                                <p>Отзывчивый к розмерам экрана, по этому смотрится хорошо на любом устройстве.</p>
+                            </div>
+
+                            <div class="modal__work__footer">
+                                <a href="" class="modal__work__link">Перейти</a>
+                                <a href="" class="modal__work__link">Открыть на GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Password Generator -->
+    <div class="modal" id="menu-burger">
+        <div class="container">
+            <div class="modal__inner">
+                <div class="modal__work">
+                    <button class="modal__close" type="button" data-close><img src="./img/modal__close.svg" alt="Закрыть"></button>
+                    <div class="modal__work__prev">
+                        <div class="modal__slider" data-slider="modalSlider" id="modalSlider">
+                            <div>
+                                <img src="./img/portfolio/Меню-бургер/Меню-бургер-1.jpg" class="modal_slider__img" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal__work__content">
+                        <div class="modal__work__info">
+                            <div class="modal__work__title">Меню бургер</div>
+
+                            <div class="work__stack">
+                                <div class="work__stack__item">HTML</div>
+                                <div class="work__stack__item">CSS</div>
+                            </div>
+
+                            <div class="work__category">#item</div>
+
+                            <div class="modal__work__info__text">
+                                <p>Простенькое меню бургер для мобильных устройств. Данный блок может быть адаптирован под любой проект.</p>
+
+                                <p>Отличительной особеностью данного меню является приятная анимация на чистом CSS.</p>
+
+                                <p>Данное меню использовано на моём сайте.</p>
+
+                            </div>
+
+                            <div class="modal__work__footer">
+                                <a href="" class="modal__work__link">Перейти</a>
+                                <a href="" class="modal__work__link">Открыть на GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/js/slick.min.js"></script>
+    <script src="/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+// main: ../style.less
+
+.btn {
+    font-size: 15px;
+    color: @white;
+    background-color: @blue;
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+
+    &--intro {
+        margin-right: 10px;
+
+        &:hover {
+            transform: translateY(-3px);
+        }
+    }
+
+    &--intro-github {
+        background-color: @dark-blue;
+
+        &:hover {
+            transform: translateY(-3px);
+        }
+    }
+}
+

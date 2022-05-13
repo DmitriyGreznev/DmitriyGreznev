@@ -1,0 +1,84 @@
+// main: ../style.less
+
+#check-menu {
+    display: none;
+}
+
+@media @mobile {
+
+    label {
+        display: block;
+        position: absolute;
+        margin: 0 auto;
+        height: 100%;
+        width: 100%;
+        cursor: pointer;
+        z-index: 5;
+        line-height: 40px;
+    }
+
+    .burger-line {
+        margin-top: 10px;
+        position: absolute;
+        width: 35px;
+        height: 2px;
+        top: 8px;
+        right: 10px;
+        background-color: @blue;
+        transition: 0.5s all;
+    }
+
+    .second, .third {
+        top: 18px;
+    }
+
+    .fourth {
+        top: 28px;
+    }
+
+    .nav {
+        display: block;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        transform: translateY(100%);
+        max-height: 0;
+        font-size: 0;
+        overflow: hidden;
+        transition: 0.5s all;
+        z-index: 1000;
+        background-color: fade(@black, 95%);
+    }
+
+    .nav__link {
+        margin: 10px 0;
+        text-align: center;
+        display: block;
+        width: 100%;
+        padding: 10px;
+        color: @white;
+        text-decoration: none;
+    }
+
+    #check-menu:checked ~ .nav {
+        max-height: 500px;
+        font-size: 18px;
+    }
+
+    #check-menu:checked ~ .first {
+        display: none;
+    }
+
+    #check-menu:checked ~ .second {
+        transform: rotate(45deg) ;
+    }
+
+    #check-menu:checked ~ .third {
+        transform: rotate(-45deg)
+    }
+
+    #check-menu:checked ~ .fourth {
+        display: none;
+    }
+}

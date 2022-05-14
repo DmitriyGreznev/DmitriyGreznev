@@ -14,6 +14,14 @@
 
 }
 
+.intro__background-section {
+    width: 45%;
+
+    @media @mobile-sm {
+        display: none;
+    }
+}
+
 .intro__inner {
     display: flex;
     justify-content: space-between;
@@ -50,25 +58,9 @@
 }
 
 .background {
-    margin-top: 40px;
-    width: 500px;
+    margin-top: 60px;
+    width: 100%;
     height: auto;
 
-    @media @notebook {
-        margin-right: 20px;
-        width: 480px;
-    }
 
-    @media @tablet {
-        margin-right: 40px;
-        width: 360px;
-    }
-
-    @media @mobile {
-        width: 240px;
-    }
-
-    @media @mobile-sm {
-        display: none;
-    }
 }

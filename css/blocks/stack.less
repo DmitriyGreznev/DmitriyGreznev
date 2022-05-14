@@ -28,25 +28,21 @@
 
 
 .stack__info__item {
+    width: 25%;
     text-align: center;
 
     img {
-        width: 110px;
+        width: 70%;
         height: auto;
         margin-bottom: 10px;
-
-        @media @mobile {
-            width: 80px;
-        }
-
-        @media @mobile-sm {
-            width: 70px;
-        }
     }
 }
 
 .stack__info__text {
     display: block;
     color: @white;
-    margin-bottom: 0px;
+
+    @media @mobile-sm {
+        font-size: 10px;
+    }
 }

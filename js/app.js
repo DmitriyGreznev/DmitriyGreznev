@@ -1,8 +1,4 @@
 $(function() {
-
-  const modalSlider = $('[data-slider="modalSlider"]');
-
-
   /* Main Slider */
 
   $('#workSlider').slick({
@@ -77,10 +73,6 @@ $(function() {
               transform: "rotateX(0)"
           });
       }, 200);
-
-
-
-      modalSlider.slick('setPosition');
   });
 
 
@@ -113,35 +105,4 @@ $(function() {
       $(".modal__inner").on("click", function(event){
           event.stopPropagation();
       });
-
-
-
-  /* Modal Slider */
-
-  modalSlider.slick({
-    infinite: true,
-    speed: 1000,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-    fade: true,
-
-});
-
-  $("#modalSlickPrevious").on("click", function(event) {
-  event.preventDefault();
-
-  let currentModalSlider = $(this).parents('.modal__work__prev').find('[data-slider="modalSlider"]');
-
-  currentModalSlider.slick("slickPrev");
-  });
-
-  $("#modalSlickNext").on("click", function(event) {
-  event.preventDefault();
-
-  let currentModalSlider = $(this).parents('.modal__work__prev').find('[data-slider="modalSlider"]');
-
-  currentModalSlider.slick("slickNext");
-  });
-
 });

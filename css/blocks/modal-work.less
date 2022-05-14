@@ -32,6 +32,10 @@
     @media @tablet {
         width: 100%;
     }
+
+    @media @mobile-sm {
+        padding: 10px;
+    }
 }
 
 .modal-work__img {
@@ -61,12 +65,18 @@
     p {
         margin-bottom: 20px;
     }
+
+    @media @mobile-sm {
+        margin-top: 0;
+    }
 }
 
 .modal-work__button-block {
     margin-top: 10px;
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
+
 }
 
 .modal-work__link {
@@ -80,6 +90,10 @@
 
     &:hover {
         transform: translateY(-3px);
+    }
+
+    @media @mobile-sm {
+        margin-bottom: 10px;
     }
 }
 
